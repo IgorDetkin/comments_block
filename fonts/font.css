@@ -1,0 +1,56 @@
+
+@font-face {
+    src: url(./Roboto-Bold.woff) format('woff');
+    /* font-family: 'Roboto-Bold'; */
+    font-weight: 700;
+    font-family: 'Roboto';
+  }
+
+  @font-face {
+    src: url(./Roboto-Medium.woff) format('woff');
+    /* font-family: 'Roboto-Medium'; */
+    font-weight: 500; 
+    font-family: 'Roboto';
+  }
+
+  @font-face {
+    src: url(./Roboto-Regular.woff) format('woff');
+    font-family: 'Roboto';
+    font-weight: 400;
+  }
+
+  @font-face {
+    src: url(./Roboto-Light.woff) format('woff');
+    /* font-family: 'Roboto-Light'; */
+    font-weight: 300;
+    font-family: 'Roboto';
+  }
+
+
+
+  @font-face {
+    src: url(./PlayfairDisplay-Bold.woff) format('woff');
+    /* font-family: 'PlayfairDisplay-Bold'; */
+    font-weight: 700;
+    font-family: 'Playfair Display';
+  }
+
+  @font-face {
+    src: url(./PlayfairDisplay-Regular.woff) format('woff');
+    /* font-family: 'PlayfairDisplay-Regular'; */
+    font-weight: 400;
+    font-family: 'Playfair Display';
+  }
+
+  
+
+  @font-face {
+    src: url(./Prata-Regular.woff) format('woff');
+    /* font-family: 'Prata-Regular'; */
+    font-weight: 400; 
+    font-family: 'Prata';
+  }
+  
+
+
+  

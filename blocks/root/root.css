@@ -1,0 +1,11 @@
+.root {
+    background-color: #dad8d8;
+    max-width: 100vw;
+}
+
+.page-title {
+    font-weight: 700; 
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-align: center;
+}

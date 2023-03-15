@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>project_1</title>
+</head>
+<body class="root">
+    <main>
+        <h1 class="page-title">Комментарии</h1>
+
+        <section class="comment-form">
+            <div class="comment-form__container">
+                <form class="comment-form__form" name="add">
+
+                    <label class="comment-form__input-wrapper">
+                        <input 
+                            name="name"
+                            id="name-input"
+                            type="text" 
+                            class="comment-form__input input-name"
+                            placeholder="Ваше имя"
+                            value=""
+                            required
+                            minlength="5"
+                            maxlength="40"
+                        >
+                        <span class="validate-error">ошибка</span>
+                    </label>
+
+
+                    <label class="comment-form__input-wrapper">
+                        <textarea 
+                            name="text"
+                            id="text-input"
+                            type="text" 
+                            class="comment-form__input input-text"
+                            placeholder="Написать комментарий"
+                            value=""
+                            required
+                            minlength="1"
+                        ></textarea>
+                        <span class="validate-error">ошибка</span>
+                    </label>
+
+                    <label class="comment-form__input-wrapper">
+                        <input 
+                            name="date"
+                            id="date-input"
+                            type="date" 
+                            class="comment-form__input input-date"
+                        >
+                       
+                       <div class="comment-form__checkbox-wrapper">
+                            <input 
+                                name="date-auto"
+                                id="date-auto-input"
+                                type="checkbox" 
+                                class="comment-form__input input-checkbox"
+                            >
+                            <span class="comment-form__checkbox-text">Указать дату автоматически</span>
+                        </div>
+                    </label>
+
+                    <button 
+                        disabled
+                        type="submit" 
+                        aria-label="add" 
+                        class="comment-form__submit comment-form__button comment-form__button_disabled" 
+                    >Опубликовать</button>                    
+                </form>
+            </div>
+        </section>
+
+
+
+
+        <section class="comment-list"> 
+            <div class="comment-list__container">
+
+
+                <template id="card-template">
+                    <div class="card">
+
+                        <div class="card__name-and-date">
+                            <h2 class="card__name"></h2>
+                            <p class="card__date"></p>
+                        </div>
+                        <p class="card__text"></p>
+
+                        <div class="card__buttons">
+                            <button class="card__like"></button>
+                            <button class="card__delete"></button>
+                        </div>
+                    </div>
+                </template>
+                
+            </div>
+        </section>
+
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
+
+
+<!-- <div class="card">
+                    <div class="card__name-and-date">
+                        <h2 class="card__name">Иван Иваныч</h2>
+                        <p class="card__date">сегодня, 16:23</p>
+                    </div>
+                    <p class="card__text">Я в своём познании так преисполнился, 
+                        как будто прожил триллиарды лет на триллиардах таких же планет
+                        как будто прожил триллиарды лет на триллиардах таких же планет
+                        как будто прожил триллиарды лет на триллиардах таких же планет. 
+                        А что если завтра не наступит, и мы будем жить в сегодняшнем дне,
+                        но находясь в завтрашнем дне как сегодня??
+                    </p>
+
+                    <div class="card__buttons">
+                        <button class="card__like"></button>
+                        <button class="card__delete"></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__name-and-date">
+                        <h2 class="card__name">Иван Иваныч</h2>
+                        <p class="card__date">сегодня, 16:23</p>
+                    </div>
+                    <p class="card__text">Я в своём познании так преисполнился, 
+                        как будт
+                    </p>
+
+                    <div class="card__buttons">
+                        <button class="card__like"></button>
+                        <button class="card__delete"></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__name-and-date">
+                        <h2 class="card__name">Иван Иваныч</h2>
+                        <p class="card__date">сегодня, 16:23</p>
+                    </div>
+                    <p class="card__text">Я в своём познании так преисполнился, 
+                        как будто прожил триллиарды лет на триллиардах такихsdsdfdsfdsfdsfdsfsdfdsfdsfsd же планет
+                    </p>
+
+                    <div class="card__buttons">
+                        <button class="card__like card__like_active"></button>
+                        <button class="card__delete"></button>
+                    </div>
+                </div> -->
+
+
+
+   <!-- 
+    форма поля: 
+    1. имя
+    2. текст комментария
+    3. дата и галочка рядом "не указывать"
+    -->
+
+    <!-- 
+        список комментариев. У каждого комментария:
+        1. имя
+        2. текст комментария
+        3. время когда добавлен комментарий(ДЕТАЛИ!!)
+        4. кнопка удаления комментария
+        5. кнопка лайка
+     -->

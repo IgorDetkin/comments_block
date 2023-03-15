@@ -1,0 +1,81 @@
+
+.comment-list {
+    background-color: #dad8d8;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.comment-list__container {
+    margin: 50px 0;
+}
+
+.card {
+    background-color: rgb(241, 242, 243);
+    box-sizing: border-box;
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.card__name-and-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.card__name {
+    margin: 0;
+    font-weight: 700; 
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+.card__date {
+    margin: 0;
+    font-weight: 400; 
+    font-family: 'Roboto';
+    font-size: 12px;
+}
+
+.card__text {
+    margin: 20px 0;
+    font-weight: 400; 
+    font-family: 'Roboto';
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card__like {
+    padding: 0;
+    width: 19px;
+    height: 16px;
+    background-image: url(../../images/like.svg);
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.card__like_active {
+    background-image: url(../../images/like_active.svg);
+}
+
+.card__delete {
+    padding: 0;
+    width: 18px;
+    height: 19px;
+    cursor: pointer ;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../../images/Trash.svg);
+    border: none;
+}

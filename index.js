@@ -13,28 +13,11 @@ const checkBoxInput = document.getElementById('date-auto-input');
 const validationError = document.querySelector('.validate-error');
 
 
-//вопрос
 const form = document.forms.add;
 const user = form.elements.name;
 const comment = form.elements.text;
 const dateComment = form.elements.date;
 // const dateAutoComment = form.elements.date-auto;
-
-
-
-//добавлять ноль перед месяцем, датой, временем, чтобы было 09:01, а не 9:1
-function addZero(item) {
-    if( item < 10) {
-        return '0' + item;
-    }
-    
-    else {
-        return item
-    }
-
-
-}
-
 
 
 let today = new Date();
@@ -52,6 +35,16 @@ let dateYesterday = ("Вчера, " + addZero(hours) + ':' + addZero(minutes));
 
 
 
+//добавлять ноль перед месяцем, датой, временем, чтобы было 09:01, а не 9:1
+function addZero(item) {
+    if( item < 10) {
+        return '0' + item;
+    }
+    else {
+        return item
+    }
+}
+
 
 function getCommentDate() {
     if(dateComment.value === now) {
@@ -64,9 +57,7 @@ function getCommentDate() {
 
     else {
         return dateComment.value;
-        
     }
-
 } 
 
 // для того, чтобы включенный чекбокс выключал соседннюю форму

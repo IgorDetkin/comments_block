@@ -1,2 +1,2 @@
 
-здесь будет ссылка на Github Pages
+ссылка на Github Pages https://igordetkin.github.io/comments_block/
